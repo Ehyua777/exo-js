@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="functions.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Demander à l'utilisateur de saisir des données jusqu'à ce qu'il entre "fin"
+        let array = [];
+        let values;
+        do {
+            values = prompt("Entrez plusieurs nombres au hazard et taper fin quand vous aurez fini :");
+            if (values !== "fin" && values !== null) {
+                array.push(values);
+            }
+        } while (values !== "fin" && values !== null);
+
+        let results = findMaxMin(array);
+        let sum = matrixElementSum(array);
+        let nombresPairs = fevenNumberFilter(array);
+
+
+        alert("Les valeurs saisies sont : [" + array + "], Le maximum est : " + results.maximum + " et le minimum et " + results.minimum + "La somme fait " + sum + "Et contient les nombre paires suivant:" + nombresPairs);
+        console.log(nombresPairs); // Affichera [2, 4, 6, 8]
+        console.log("La somme est " + sum);
+        console.log("Les valeurs saisies sont : " + array);
+        console.log("Le maximum est : " + results.maximum);
+        console.log("Le minimum est : " + results.minimum);
+    </script>
+
+</body>
+
+</html>

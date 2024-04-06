@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="string.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="">
+        <script>
+            let originalString = prompt("Entrez n'importe quel mot meme s'il n'a pas de sens");
+            let inversreversedString = stringIversion(originalString);
+            let caracteresNumber = characterCounter(originalString);
+            let textInUppercase = capitalizeCharacters(originalString);
+
+            alert(`Voici la version inversée par js du mot que vous avez entré: ${inversreversedString} et compte ${caracteresNumber} de caractère et s'écrit ${textInUppercase} en majuscule`);
+            console.log(inversreversedString);
+            console.log(caracteresNumber);
+            console.log(textInUppercase);
+        </script>
+    </div>
+</body>
+
+</html>

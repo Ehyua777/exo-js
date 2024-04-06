@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="functions.js"></script>
+    <title>Document</title>
+</head>
+
+
+<body>
+    <h1>Voire la console</h1>
+    <div>
+        <script>
+            // Exemple d'utilisation de la fonction factoriel
+            let nombre = 5;
+            let resultatFactorielle = factorielle(nombre);
+            console.log("La factorielle de " + nombre + " est : " + resultatFactorielle);
+
+            // Exemple d'utilisation de la fonction nombre premier
+            let nombre1 = 7;
+            let nombre2 = 10;
+            console.log(nombre1 + " est premier : " + estPremier(nombre1)); // affichera true
+            console.log(nombre2 + " est premier : " + estPremier(nombre2)); // affichera false
+
+            // Exemple d'utilisation de la fonction suite de fibione
+            let nombreDeTermes = 10;
+            let resultatFibonacci = fibonacci(nombreDeTermes);
+            console.log("Suite de Fibonacci jusqu'à " + nombreDeTermes + " termes : " + resultatFibonacci);
+
+        </script>
+    </div>
+</body>
+
+</html>
